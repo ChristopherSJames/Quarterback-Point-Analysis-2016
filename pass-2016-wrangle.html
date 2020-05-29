@@ -13121,7 +13121,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load df into df called df_original. Make copy called df for analysis</span>
@@ -13136,7 +13136,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -13205,7 +13205,8 @@ memory usage: 22.6+ KB
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Assess">Assess<a class="anchor-link" href="#Assess">&#182;</a></h2><p>(1) Players have some sort of unique ID next to their names that is not needed.<br>
-(2) The QBrec column contains 3 data points.</p>
+(2) The QBrec column contains 3 data points.<br>
+(3) The Pos column contains 2 different values for QB, WR, and RB.</p>
 
 </div>
 </div>
@@ -13219,7 +13220,7 @@ memory usage: 22.6+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Player&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -13235,108 +13236,108 @@ memory usage: 22.6+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>Antonio Morrison\MorrAn01       1
-Aaron Rodgers*\RodgAa00         1
-Paxton Lynch\LyncPa00           1
+<pre>Cody Kessler\KessCo00           1
 Jared Goff\GoffJa00             1
+Jimmy Garoppolo\GaroJi00        1
+Marcus Mariota\MariMa01         1
+Matthew Stafford\StafMa00       1
+Sean Mannion\MannSe00           1
 Cardale Jones\JoneCa01          1
+Tyrod Taylor\TaylTy00           1
+Alex Smith*\SmitAl03            1
 Derek Carr*\CarrDe02            1
-Jonathan Williams\WillJo07      1
-Blake Bortles\BortBl00          1
-EJ Manuel\ManuEJ00              1
-Robert Griffin\GrifRo01         1
-Drew Brees*\BreeDr00            1
-Andy Dalton*\DaltAn00           1
-Marqise Lee\LeexMa00            1
-Eli Manning\MannEl00            1
-Ryan Mallett\MallRy00           1
-Jay Cutler\CutlJa00             1
-Trevone Boykin\BoykTr00         1
-Johnny Hekker*+\HekkJo00        1
-Carson Palmer\PalmCa00          1
-Carson Wentz\WentCa00           1
-Dez Bryant*\BryaDe01            1
+Matt Cassel\CassMa00            1
+Terrelle Pryor\PryoTe00         1
+Pat McAfee*\McAfPa44            1
+Landry Jones\JoneLa02           1
+Doug Baldwin*\BaldDo00          1
+Brian Hoyer\HoyeBr00            1
+Tress Way\WayxTr00              1
+Brock Osweiler\OsweBr00         1
+Chase Daniel\DaniCh00           1
+Trevor Siemian\SiemTr00         1
+Travis Benjamin\BenjTr00        1
+Cam Newton\NewtCa00             1
+Tony Romo\RomoTo00              1
 Case Keenum\KeenCa00            1
-Josh McCown\McCoJo01            1
-Tom Savage\SavaTo00             1
-Jacoby Brissett\BrisJa00        1
-Pharoh Cooper\CoopPh00          1
 Kirk Cousins*\CousKi00          1
-Matt Ryan*+\RyanMa00            1
-Scott Tolzien\TolzSc00          1
-Nick Foles\FoleNi00             1
-Sam Bradford\BradSa00           1
-Ryan Fitzpatrick\FitzRy00       1
+Geno Smith\SmitGe00             1
+Dontari Poe\PoexDo00            1
+Joe Flacco\FlacJo00             1
+Drew Stanton\StanDr00           1
+Tom Savage\SavaTo00             1
+Jameis Winston\WinsJa00         1
+Pharoh Cooper\CoopPh00          1
+Russell Wilson\WilsRu00         1
+Cameron Meredith\MereCa00       1
+Charlie Whitehurst\WhitCh02     1
+Matt Schaub\SchaMa00            1
+Brett Hundley\HundBr00          1
+Antonio Morrison\MorrAn01       1
+Willie Snead\SneaWi00           1
+Ben Roethlisberger*\RoetBe00    1
+Kevin Hogan\HogaKe00            1
+Kellen Clemens\ClemKe00         1
+Andrew Luck\LuckAn00            1
+Jerick McKinnon\McKiJe00        1
 Derek Anderson\AndeDe00         1
 Mark Sanchez\SancMa00           1
-Pat McAfee*\McAfPa44            1
-Matt Barkley\BarkMa00           1
-Marcus Mariota\MariMa01         1
-Terrelle Pryor\PryoTe00         1
-Matt McGloin\McGlMa01           1
-Travis Benjamin\BenjTr00        1
-Matt Schaub\SchaMa00            1
-Cody Kessler\KessCo00           1
-Ben Roethlisberger*\RoetBe00    1
-Brett Hundley\HundBr00          1
-Landry Jones\JoneLa02           1
-Charlie Whitehurst\WhitCh02     1
-Brian Hoyer\HoyeBr00            1
-Doug Baldwin*\BaldDo00          1
-Trevor Siemian\SiemTr00         1
-Le&#39;Veon Bell*\BellLe00          1
-Jimmy Garoppolo\GaroJi00        1
-Matt Cassel\CassMa00            1
-Jeremy Maclin\MaclJe00          1
-Chase Daniel\DaniCh00           1
-Blaine Gabbert\GabbBl00         1
-Brock Osweiler\OsweBr00         1
-Tony Romo\RomoTo00              1
-Cole Beasley\BeasCo00           1
-Tom Brady*\BradTo00             1
-Russell Wilson\WilsRu00         1
-Alex Smith*\SmitAl03            1
-Duke Johnson\JohnDu00           1
-Andrew Luck\LuckAn00            1
-Tress Way\WayxTr00              1
-DeMarco Murray*\MurrDe00        1
-Ryan Tannehill\TannRy00         1
-Shaun Hill\HillSh00             1
-Kellen Clemens\ClemKe00         1
-Riley Dixon\DixoRi00            1
-Cameron Meredith\MereCa00       1
-Drew Stanton\StanDr00           1
-Jon Ryan\RyanJo21               1
-Colin Kaepernick\KaepCo00       1
-Sean Mannion\MannSe00           1
-Jerick McKinnon\McKiJe00        1
-Justin Tucker*+\TuckJu00        1
-Mike Glennon\GlenMi00           1
-Dontari Poe\PoexDo00            1
-Tyrod Taylor\TaylTy00           1
-David Fales\FaleDa00            1
-Cam Newton\NewtCa00             1
-Philip Rivers*\RivePh00         1
-Matt Moore\MoorMa01             1
-Dak Prescott*\PresDa01          1
-Kevin Hogan\HogaKe00            1
 Connor Cook\CookCo00            1
-Geno Smith\SmitGe00             1
-Jameis Winston\WinsJa00         1
-Bryce Petty\PettBr01            1
-Jarvis Landry*\LandJa00         1
-Matthew Stafford\StafMa00       1
-Josh Huff\HuffJo00              1
-Willie Snead\SneaWi00           1
+Matt Ryan*+\RyanMa00            1
+Carson Wentz\WentCa00           1
+Matt Barkley\BarkMa00           1
+EJ Manuel\ManuEJ00              1
+Blaine Gabbert\GabbBl00         1
+Jacoby Brissett\BrisJa00        1
+Justin Tucker*+\TuckJu00        1
+Drew Brees*\BreeDr00            1
+Jonathan Williams\WillJo07      1
+Colin Kaepernick\KaepCo00       1
 Tanner McEvoy\McEvTa01          1
+Sam Bradford\BradSa00           1
+Matt Moore\MoorMa01             1
+Matt McGloin\McGlMa01           1
+Bryce Petty\PettBr01            1
+Tom Brady*\BradTo00             1
+Ryan Mallett\MallRy00           1
+Ryan Fitzpatrick\FitzRy00       1
+Nick Foles\FoleNi00             1
+Scott Tolzien\TolzSc00          1
+Dez Bryant*\BryaDe01            1
+Trevone Boykin\BoykTr00         1
+Eli Manning\MannEl00            1
+Jarvis Landry*\LandJa00         1
+Josh McCown\McCoJo01            1
+Riley Dixon\DixoRi00            1
+Jeremy Maclin\MaclJe00          1
+Paxton Lynch\LyncPa00           1
+Robert Griffin\GrifRo01         1
+David Fales\FaleDa00            1
+Andy Dalton*\DaltAn00           1
+Jon Ryan\RyanJo21               1
+Cole Beasley\BeasCo00           1
+Le&#39;Veon Bell*\BellLe00          1
+Carson Palmer\PalmCa00          1
+Mike Glennon\GlenMi00           1
+Duke Johnson\JohnDu00           1
+Dak Prescott*\PresDa01          1
+Johnny Hekker*+\HekkJo00        1
+Ryan Tannehill\TannRy00         1
+Aaron Rodgers*\RodgAa00         1
+Marqise Lee\LeexMa00            1
+Philip Rivers*\RivePh00         1
 Larry Fitzgerald*\FitzLa00      1
-Joe Flacco\FlacJo00             1
+Jay Cutler\CutlJa00             1
+Josh Huff\HuffJo00              1
+Shaun Hill\HillSh00             1
+Blake Bortles\BortBl00          1
+DeMarco Murray*\MurrDe00        1
 Name: Player, dtype: int64</pre>
 </div>
 
@@ -13355,7 +13356,7 @@ Name: Player, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;QBrec&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -13371,7 +13372,7 @@ Name: Player, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13381,39 +13382,90 @@ Name: Player, dtype: int64</pre>
 1-4-0     4
 1-1-0     4
 0-1-0     3
+8-7-0     2
+8-6-0     2
+11-5-0    2
 9-7-0     2
 7-8-0     2
-11-5-0    2
-8-7-0     2
 7-9-0     2
-8-6-0     2
-10-4-0    1
+4-5-0     1
 0-8-0     1
-8-5-0     1
-3-8-0     1
-0-3-0     1
+6-9-1     1
 1-10-0    1
+10-4-0    1
+10-5-1    1
+3-8-0     1
+6-8-1     1
+2-1-0     1
+8-7-1     1
+0-2-0     1
 11-1-0    1
 5-11-0    1
-1-3-0     1
-2-1-0     1
-4-5-0     1
-8-7-1     1
 0-7-0     1
-1-5-0     1
-10-5-1    1
-11-4-0    1
-6-8-0     1
-6-9-1     1
-0-2-0     1
-8-8-0     1
-3-13-0    1
 13-3-0    1
-6-8-1     1
-12-3-0    1
+3-13-0    1
+1-5-0     1
+6-8-0     1
+1-3-0     1
+0-3-0     1
 10-6-0    1
+12-3-0    1
+8-5-0     1
+11-4-0    1
+8-8-0     1
 2-0-0     1
 Name: QBrec, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Assessment-3">Assessment 3<a class="anchor-link" href="#Assessment-3">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pos&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[10]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>QB       31
+qb       23
+WR        8
+P         5
+wr        3
+rb        2
+RB        2
+K         1
+mlb       1
+NT        1
+fb/wr     1
+Name: Pos, dtype: int64</pre>
 </div>
 
 </div>
@@ -13841,9 +13893,92 @@ Name: QBrec, dtype: int64</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Assessment-3---Define">Assessment 3 - Define<a class="anchor-link" href="#Assessment-3---Define">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I will replace each of the lower case values with uppercase values. I will do this across the column for consistency.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Assessment-3---Code">Assessment 3 - Code<a class="anchor-link" href="#Assessment-3---Code">&#182;</a></h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pos&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pos&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="assessment-3---Test">assessment 3 - Test<a class="anchor-link" href="#assessment-3---Test">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pos&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[16]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>QB       54
+WR       11
+P         5
+RB        4
+MLB       1
+FB/WR     1
+K         1
+NT        1
+Name: Pos, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Put cleaned dataframe into master csv file</span>
